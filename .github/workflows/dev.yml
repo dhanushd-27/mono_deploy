@@ -29,8 +29,4 @@ jobs:
           key: ${{ secrets.DEV_KEY }}
           port: 22
           script: |
-            cd ./prod_mono
-            git stash
-            git pull origin main
-            git stash pop
-            pm2 restart all
+            ls
