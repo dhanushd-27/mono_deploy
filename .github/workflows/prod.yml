@@ -20,4 +20,6 @@ jobs:
           username: ${{ secrets.PROD_USERNAME }}
           key: ${{ secrets.PROD_KEY }}
           port: 22
-          script: whoami
+          script: |
+            whoami
+            ls

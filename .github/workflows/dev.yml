@@ -20,4 +20,9 @@ jobs:
           username: ${{ secrets.DEV_USERNAME }}
           key: ${{ secrets.DEV_KEY }}
           port: 22
-          script: whoami
+          script: 
+            whoami
+            ls
+            # Add your deployment commands here
+            # For example, you might want to pull the latest code from a repository
+            # or restart a service on the remote server.
