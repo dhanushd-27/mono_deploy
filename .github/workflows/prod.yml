@@ -31,4 +31,4 @@ jobs:
           script: |
             cd ./prod_mono
             git pull origin main
-            ls
+            pm2 restart all
