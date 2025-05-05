@@ -29,9 +29,6 @@ jobs:
           key: ${{ secrets.DEV_KEY }}
           port: 22
           script: |
-            # Add your production deployment commands here
-              echo "Deploying to production server..."
-              # Example: npm install && npm run build
-              # Example: pm2 restart all
-              echo "Deployment complete!"
-              ls
+            cd ./prod_mono
+            git pull origin main
+            ls
