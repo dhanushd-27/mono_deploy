@@ -29,4 +29,6 @@ jobs:
           key: ${{ secrets.PROD_KEY }}
           port: 22
           script: |
-            ls
+            cd prod_mono_app
+            git pull origin main
+            pm2 restart all

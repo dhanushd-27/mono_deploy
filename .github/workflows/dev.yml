@@ -29,4 +29,6 @@ jobs:
           key: ${{ secrets.DEV_KEY }}
           port: 22
           script: |
-            ls
+            cd dev_mono_app
+            git pull origin main
+            pm2 restart all
