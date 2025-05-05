@@ -34,6 +34,4 @@ jobs:
               # Example: npm install && npm run build
               # Example: pm2 restart all
               echo "Deployment complete!"
-              ls -la
-              cd /dev_mono
-              ls -la
+              ls
