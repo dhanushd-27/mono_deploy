@@ -28,4 +28,9 @@ jobs:
           username: ${{ secrets.DEV_USERNAME }}
           key: ${{ secrets.DEV_KEY }}
           port: 22
-          script: touch /tmp/hello.txt
+          script: |
+            # Add your production deployment commands here
+              echo "Deploying to production server..."
+              # Example: npm install && npm run build
+              # Example: pm2 restart all
+              echo "Deployment complete!"
