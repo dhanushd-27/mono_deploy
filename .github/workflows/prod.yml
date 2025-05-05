@@ -21,6 +21,9 @@ jobs:
         with:
           node-version: '20'
 
+      - name: Add directory to PATH
+        run: echo "/home/prod_mono/.nvm/versions/node/v22.15.0/bin/pm2" >> $GITHUB_PATH
+
       - name: Execute remote SSH commands using SSH key
         uses: appleboy/ssh-action@master
         with:
