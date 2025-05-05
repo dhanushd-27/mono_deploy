@@ -34,5 +34,5 @@ jobs:
           script: |
             cd dev_mono_app
             git pull origin main
-            cd
+            export PATH=$PATH:/home/dev_mono/.nvm/versions/node/v22.15.0/bin;
             pm2 restart all
