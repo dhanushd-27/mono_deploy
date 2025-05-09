@@ -3,10 +3,10 @@ name: CI/CD Pipeline for Dev Environment
 on:
   push:
     branches:
-      - main
+      - prod
   pull_request:
     branches:
-      - "**"
+      - prod
 
 jobs:
   build:
@@ -33,6 +33,6 @@ jobs:
           port: 22
           script: |
             cd prod_mono_app
-            git pull origin main
+            git pull origin prod
             export PATH=$PATH:/home/prod_mono/.nvm/versions/node/v22.15.0/bin;
             pm2 restart all
